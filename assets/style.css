@@ -1,0 +1,135 @@
+header{
+    background-color: #3B9C01;
+    height: 30px;
+    text-align: center;
+    color: #FFF;
+}
+.loading
+{
+    width: 0;
+    height: 0;
+    background: none;
+    position: static;
+    display: none;
+}
+.loading.show
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    background-image: url(loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.tabela{
+    margin: 10px 0 0 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+} 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+  
+td:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+tbody tr:nth-child(n+1):nth-child(-n+4)
+{
+    border-left: solid 3px #4285F4;
+}
+
+tbody tr:nth-child(n+5):nth-child(-n+6)
+{
+    border-left: solid 3px #FA7B17;
+}
+
+tbody tr:nth-child(n+7):nth-child(-n+12)
+{
+    border-left: solid 3px #3B9C01;
+}
+
+tbody tr:nth-child(n+17):nth-child(-n+20)
+{
+    border-left: solid 3px #ff0000;
+}
+
+.confrontos
+{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 94%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: width .2s linear;
+    overflow: hidden;
+    color: #fff;
+}
+.confrontos.show
+{
+    width: 100%;
+    transition: width .2s linear;
+}
+
+.confrontos ul{
+    list-style-type: none;
+}
+
+.confrontos li{
+    text-align: center;
+}
+
+.confrontos li span{
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.confrontos .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.icon{
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+}
+.athletico_paranaense{ background-image: url(icons/athletico_paranaense.png); }
+.atletico_goianiense{ background-image: url(icons/atletico_goianiense.png); }
+.atletico_mineiro{ background-image: url(icons/atletico_mineiro.png); }
+.bahia{ background-image: url(icons/bahia.png); }
+.botafogo{ background-image: url(icons/botafogo.png); }
+.ceara{ background-image: url(icons/ceara.png); }
+.corinthians{ background-image: url(icons/corinthians.png); }
+.coritiba{ background-image: url(icons/coritiba.png); }
+.flamengo{ background-image: url(icons/flamengo.png); }
+.fluminense{ background-image: url(icons/fluminense.png); }
+.fortaleza{ background-image: url(icons/fortaleza.png); }
+.goias{ background-image: url(icons/goias.png); }
+.gremio{ background-image: url(icons/gremio.png); }
+.internacional{ background-image: url(icons/internacional.png); }
+.palmeiras{ background-image: url(icons/palmeiras.png); }
+.red_bull_bragantino{ background-image: url(icons/red_bull_bragantino.png); }
+.santos{ background-image: url(icons/santos.png); }
+.sao_paulo{ background-image: url(icons/sao_paulo.png); }
+.sport{ background-image: url(icons/sport.png); }
+.vasco_da_gama{ background-image: url(icons/vasco_da_gama.png); }
+

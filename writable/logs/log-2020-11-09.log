@@ -1,0 +1,352 @@
+CRITICAL - 2020-11-09 07:12:06 --> Invalid file: welcome_message.php
+#0 C:\wamp\www\bernoulli\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message...')
+#1 C:\wamp\www\bernoulli\system\Common.php(1119): CodeIgniter\View\View->render('welcome_message', Array, true)
+#2 C:\wamp\www\bernoulli\app\Controllers\Home.php(7): view('welcome_message')
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 08:39:05 --> Trying to get property 'name' of non-object
+#0 C:\wamp\www\bernoulli\app\Controllers\Home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp\\www\\ber...', 27, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Home->iiii()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 08:45:43 --> syntax error, unexpected '}'
+#0 C:\wamp\www\bernoulli\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('home/iiii')
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('home/iiii')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 08:46:18 --> Undefined property: App\Controllers\Home::$NewsModel
+#0 C:\wamp\www\bernoulli\app\Controllers\Home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\ber...', 28, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Home->iiii()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 09:03:39 --> Undefined property: App\Controllers\Home::$ReceitaModel
+#0 C:\wamp\www\bernoulli\app\Controllers\Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\ber...', 16, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 09:03:55 --> Invalid file: template.php
+#0 C:\wamp\www\bernoulli\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template.php')
+#1 C:\wamp\www\bernoulli\system\Common.php(1119): CodeIgniter\View\View->render('template', Array, true)
+#2 C:\wamp\www\bernoulli\app\Controllers\Home.php(30): view('template', Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 14:11:25 --> Table 'bernoulli.times' doesn't exist
+#0 C:\wamp\www\bernoulli\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `id`, `n...')
+#1 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\wamp\www\bernoulli\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\wamp\www\bernoulli\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(18): CodeIgniter\Model->findAll()
+#6 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#7 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#8 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-11-09 14:13:40 --> Class 'App\Models\TimesModel' not found
+#0 C:\wamp\www\bernoulli\system\CodeIgniter.php(890): App\Controllers\Home->__construct()
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-09 14:18:57 --> Unknown column 'team.id' in 'field list'
+#0 C:\wamp\www\bernoulli\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `team`.`...')
+#1 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `team`.`...')
+#2 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `team`.`...')
+#3 C:\wamp\www\bernoulli\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `team`.`...', Array, false)
+#4 C:\wamp\www\bernoulli\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(19): CodeIgniter\Model->findAll()
+#6 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#7 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#8 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-11-09 14:19:30 --> Unknown column 'team.id' in 'on clause'
+#0 C:\wamp\www\bernoulli\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `teams`....')
+#1 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `teams`....')
+#2 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `teams`....')
+#3 C:\wamp\www\bernoulli\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `teams`....', Array, false)
+#4 C:\wamp\www\bernoulli\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(19): CodeIgniter\Model->findAll()
+#6 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#7 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#8 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-11-09 14:19:34 --> Unknown column 'team.id' in 'on clause'
+#0 C:\wamp\www\bernoulli\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `teams`....')
+#1 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `teams`....')
+#2 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `teams`....')
+#3 C:\wamp\www\bernoulli\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `teams`....', Array, false)
+#4 C:\wamp\www\bernoulli\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(19): CodeIgniter\Model->findAll()
+#6 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#7 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#8 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-11-09 19:13:47 --> Trying to get property 'GF' of non-object
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp\\www\\ber...', 34, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 19:30:47 --> Cannot use object of type stdClass as array
+#0 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-09 19:31:08 --> Cannot use object of type stdClass as array
+#0 [internal function]: App\Controllers\Ajax->App\Controllers\{closure}(Object(stdClass))
+#1 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(33): array_filter(Array, Object(Closure))
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-09 19:31:25 --> Undefined property: stdClass::$offer_id
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\ber...', 32, Array)
+#1 [internal function]: App\Controllers\Ajax->App\Controllers\{closure}(Object(stdClass))
+#2 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(33): array_filter(Array, Object(Closure))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 19:31:58 --> Cannot use object of type stdClass as array
+#0 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-09 19:32:09 --> Cannot use object of type stdClass as array
+#0 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-09 19:32:17 --> Undefined property: stdClass::$countries
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\ber...', 34, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 19:32:30 --> Undefined property: stdClass::$name
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\ber...', 34, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 19:32:45 --> Object of class stdClass could not be converted to string
+#0 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-09 19:39:57 --> Creating default object from empty value
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating defaul...', 'C:\\wamp\\www\\ber...', 34, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 19:44:53 --> 'break' not in the 'loop' or 'switch' context
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 19:45:03 --> 'break' not in the 'loop' or 'switch' context
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-09 19:47:46 --> Undefined variable: v
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\ber...', 34, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 19:49:37 --> Undefined offset: 13
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\wamp\\www\\ber...', 35, Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 20:26:46 --> Unable to connect to the database.
+#0 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp\www\bernoulli\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `teams`....', Array, false)
+#2 C:\wamp\www\bernoulli\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(23): CodeIgniter\Model->findAll()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#6 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 20:32:39 --> There is no data to update.
+#0 C:\wamp\www\bernoulli\system\Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(70): CodeIgniter\Model->update(Array)
+#2 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(23): App\Controllers\Confrontation->updatePoints(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Confrontation->create()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Confrontation))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 20:33:05 --> There is no data to update.
+#0 C:\wamp\www\bernoulli\system\Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(70): CodeIgniter\Model->update(Array)
+#2 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(23): App\Controllers\Confrontation->updatePoints(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Confrontation->create()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Confrontation))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 20:54:24 --> Call to undefined function App\Controllers\orderTable()
+#0 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-09 20:54:35 --> usort() expects parameter 2 to be a valid callback, function 'cmp' not found or invalid function name
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'usort() expects...', 'C:\\wamp\\www\\ber...', 60, Array)
+#1 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(60): usort(Array, 'cmp')
+#2 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 20:57:06 --> usort() expects parameter 2 to be a valid callback, function 'cmp' not found or invalid function name
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'usort() expects...', 'C:\\wamp\\www\\ber...', 55, Array)
+#1 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(55): usort(Array, 'cmp')
+#2 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 20:58:18 --> usort() expects parameter 2 to be a valid callback, class 'Ajax' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'usort() expects...', 'C:\\wamp\\www\\ber...', 55, Array)
+#1 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(55): usort(Array, Array)
+#2 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 20:58:48 --> Cannot use object of type stdClass as array
+#0 [internal function]: App\Controllers\Ajax->cmp(Object(stdClass), Object(stdClass))
+#1 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(55): usort(Array, Array)
+#2 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 20:59:07 --> Cannot pass parameter 1 by reference
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 21:03:59 --> Cannot pass parameter 1 by reference
+#0 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 21:04:18 --> usort() expects parameter 2 to be a valid callback, function 'cmp' not found or invalid function name
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'usort() expects...', 'C:\\wamp\\www\\ber...', 55, Array)
+#1 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(55): usort(Array, 'cmp')
+#2 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 21:05:54 --> Cannot use object of type stdClass as array
+#0 [internal function]: App\Controllers\Ajax->cmp(Object(stdClass), Object(stdClass))
+#1 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(55): usort(Array, Array)
+#2 C:\wamp\www\bernoulli\app\Controllers\Ajax.php(47): App\Controllers\Ajax->orderTable(Array)
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Ajax->getDataTable()
+#4 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#5 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 22:29:15 --> syntax error, unexpected '}'
+#0 C:\wamp\www\bernoulli\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('ajax/getDataTab...')
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('ajax/getDataTab...')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 22:29:29 --> syntax error, unexpected '}', expecting end of file
+#0 C:\wamp\www\bernoulli\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('ajax/getDataTab...')
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('ajax/getDataTab...')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 22:29:33 --> syntax error, unexpected '}', expecting end of file
+#0 C:\wamp\www\bernoulli\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('ajax/getDataTab...')
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('ajax/getDataTab...')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 22:29:36 --> syntax error, unexpected '}', expecting end of file
+#0 C:\wamp\www\bernoulli\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('ajax/getDataTab...')
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('ajax/getDataTab...')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 23:44:48 --> Call to undefined method App\Models\ConfrontationModel::where_or
+#0 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(88): CodeIgniter\Model->__call('where_or', Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Confrontation->get('5')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Confrontation))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 23:44:59 --> Call to undefined method App\Models\ConfrontationModel::or_where
+#0 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(88): CodeIgniter\Model->__call('or_where', Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Confrontation->get('5')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Confrontation))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 23:46:06 --> Call to undefined method App\Models\ConfrontationModel::whereOr
+#0 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(88): CodeIgniter\Model->__call('whereOr', Array)
+#1 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Confrontation->get('5')
+#2 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Confrontation))
+#3 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 23:48:45 --> Not unique table/alias: 'teams'
+#0 C:\wamp\www\bernoulli\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `visitor...')
+#1 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `visitor...')
+#2 C:\wamp\www\bernoulli\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `visitor...')
+#3 C:\wamp\www\bernoulli\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `visitor...', Array, false)
+#4 C:\wamp\www\bernoulli\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp\www\bernoulli\app\Controllers\Confrontation.php(94): CodeIgniter\Model->findAll()
+#6 C:\wamp\www\bernoulli\system\CodeIgniter.php(918): App\Controllers\Confrontation->get('5')
+#7 C:\wamp\www\bernoulli\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Confrontation))
+#8 C:\wamp\www\bernoulli\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\bernoulli\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
